@@ -1,0 +1,10 @@
+applications:
+- name: attendee-service
+  disk_quota: 1G
+  instances: 1
+  memory: 650M
+  routes:
+  - route: attendee-service-funny-bushbuck-mk.cfapps.io
+  services:
+  - attendee-mysql
+  stack: cflinuxfs3
